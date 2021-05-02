@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Glub Glub.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Glub Glub.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Glub" parent="." instance=ExtResource( 1 )]
+position = Vector2( 67.4407, 92.1543 )
+script = ExtResource( 2 )
+
+[node name="Wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wall"]
+polygon = PoolVector2Array( -7.62939e-06, 179.381, -22.2487, 179.911, -21.1893, -23.5061, 346.974, -23.5061, 344.855, 178.322, 318.898, 178.322, 321.017, -1.2574, 0.529724, -1.2574 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Wall"]
+polygon = PoolVector2Array( 1.05946, 179.381, 318.898, 178.322, 319.958, 191.565, -0.529739, 191.565 )
